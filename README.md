@@ -1,7 +1,10 @@
-# test coverage for  [gulp-iconfont (v8.0.1)](https://github.com/nfroidure/gulp-iconfont)  [![npm package](https://img.shields.io/npm/v/npmtest-gulp-iconfont.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-gulp-iconfont) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-gulp-iconfont.svg)](https://travis-ci.org/npmtest/node-npmtest-gulp-iconfont)
+# npmtest-gulp-iconfont
+
+#### test coverage for  [gulp-iconfont (v8.0.1)](https://github.com/nfroidure/gulp-iconfont)  [![npm package](https://img.shields.io/npm/v/npmtest-gulp-iconfont.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-gulp-iconfont) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-gulp-iconfont.svg)](https://travis-ci.org/npmtest/node-npmtest-gulp-iconfont)
+
 #### Create icon fonts from several SVG icons
 
-[![NPM](https://nodei.co/npm/gulp-iconfont.png?downloads=true)](https://www.npmjs.com/package/gulp-iconfont)
+[![NPM](https://nodei.co/npm/gulp-iconfont.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-iconfont)
 
 | git-branch : | [alpha](https://github.com/npmtest/node-npmtest-gulp-iconfont/tree/alpha)|
 |--:|:--|
@@ -9,11 +12,17 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-gulp-iconfont/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-gulp-iconfont/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-gulp-iconfont/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-gulp-iconfont/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-gulp-iconfont/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-gulp-iconfont/build/coverage.html/index.html)
+- [https://npmtest.github.io/node-npmtest-gulp-iconfont/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-gulp-iconfont/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-gulp-iconfont/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-gulp-iconfont%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-gulp-iconfont/build/test-report.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-gulp-iconfont/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-gulp-iconfont/build/coverage.html/index.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-iconfont/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-gulp-iconfont%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-iconfont/build/apidoc.html)
+- [https://npmtest.github.io/node-npmtest-gulp-iconfont/build/test-report.html](https://npmtest.github.io/node-npmtest-gulp-iconfont/build/test-report.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-gulp-iconfont/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-gulp-iconfont/build/test-report.html)
+
+- [https://npmdoc.github.io/node-npmdoc-gulp-iconfont/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-gulp-iconfont/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-iconfont/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-iconfont/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-gulp-iconfont/build/screenCapture.npmPackageListing.svg)
 
@@ -77,13 +86,11 @@
     "main": "src/index.js",
     "maintainers": [
         {
-            "name": "nfroidure",
-            "email": "nfroidure@elitwork.com"
+            "name": "nfroidure"
         }
     ],
     "name": "gulp-iconfont",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/nfroidure/gulp-iconfont.git"
