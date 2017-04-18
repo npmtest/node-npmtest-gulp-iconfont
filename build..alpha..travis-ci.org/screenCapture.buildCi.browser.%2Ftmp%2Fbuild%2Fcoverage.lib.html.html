@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-gulp-iconfont/gulp-iconfont/src/index.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-gulp-iconfont/node_modules/gulp-iconfont/src/index.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,7 +192,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-gulp-iconfont">npmtest-gulp-iconfont (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-gulp-iconfont/gulp-iconfont/src/index.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-gulp-iconfont/node_modules/gulp-iconfont/src/index.js</span></h1>
     <h2>
         
         Statements: <span class="metric">30.56% <small>(11 / 36)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -210,11 +208,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-gulp-iconfont/gulp-iconfont/src/</a> &#187; index.js</div>
+    <div class="path"><a href="../../../../index.html">All files</a> » <a href="index.html">node-npmtest-gulp-iconfont/node_modules/gulp-iconfont/src/</a> » index.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -440,35 +438,35 @@ var cond = require('gulp-cond');
 var filter = require('streamfilter');
 var spawn = require('gulp-spawn');
 &nbsp;
-<span class="fstat-no" title="function not covered" >function gulpFontIcon(options) {</span>
-<span class="cstat-no" title="statement not covered" >  var inStream = null;</span>
-<span class="cstat-no" title="statement not covered" >  var outStream = null;</span>
-<span class="cstat-no" title="statement not covered" >  var duplexStream = null;</span>
+<span class="fstat-no" title="function not covered">function gulpFontIcon(options) {</span>
+<span class="cstat-no" title="statement not covered">  var inStream = null;</span>
+<span class="cstat-no" title="statement not covered">  var outStream = null;</span>
+<span class="cstat-no" title="statement not covered">  var duplexStream = null;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  options = options || {};</span>
-<span class="cstat-no" title="statement not covered" >  options.formats = options.formats || ['ttf', 'eot', 'woff'];</span>
+<span class="cstat-no" title="statement not covered">  options = options || {};</span>
+<span class="cstat-no" title="statement not covered">  options.formats = options.formats || ['ttf', 'eot', 'woff'];</span>
   // Generating SVG font and saving her
-<span class="cstat-no" title="statement not covered" >  inStream = svgicons2svgfont(options);</span>
+<span class="cstat-no" title="statement not covered">  inStream = svgicons2svgfont(options);</span>
   // Generating TTF font and saving her
-<span class="cstat-no" title="statement not covered" >  outStream = inStream</span>
+<span class="cstat-no" title="statement not covered">  outStream = inStream</span>
     .pipe(svg2ttf({
       clone: -1 !== options.formats.indexOf('svg'),
       timestamp: options.timestamp,
-    }).on('error', <span class="fstat-no" title="function not covered" >function(err) {</span>
-<span class="cstat-no" title="statement not covered" >      outStream.emit('error', err);</span>
+    }).on('error', <span class="fstat-no" title="function not covered">function(err) {</span>
+<span class="cstat-no" title="statement not covered">      outStream.emit('error', err);</span>
     }))
   // TTFAutoHint
-    .pipe(cond(!!options.autohint, <span class="fstat-no" title="function not covered" >function() {</span>
-<span class="cstat-no" title="statement not covered" >      var hintPath = typeof options.autohint === 'string' ? options.autohint : 'ttfautohint';</span>
-<span class="cstat-no" title="statement not covered" >      var nonTTFfilter = filter(<span class="fstat-no" title="function not covered" >function(file, unused, cb) {</span></span>
-<span class="cstat-no" title="statement not covered" >        cb(file.path.indexOf('.ttf') !== file.path.length - 4);</span>
+    .pipe(cond(!!options.autohint, <span class="fstat-no" title="function not covered">function() {</span>
+<span class="cstat-no" title="statement not covered">      var hintPath = typeof options.autohint === 'string' ? options.autohint : 'ttfautohint';</span>
+<span class="cstat-no" title="statement not covered">      var nonTTFfilter = filter(<span class="fstat-no" title="function not covered">function(file, unused, cb) {</span></span>
+<span class="cstat-no" title="statement not covered">        cb(file.path.indexOf('.ttf') !== file.path.length - 4);</span>
       }, {
         objectMode: true,
         restore: true,
         passthrough: true,
       });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      return duplexer(</span>
+<span class="cstat-no" title="statement not covered">      return duplexer(</span>
         { objectMode: true },
         nonTTFfilter,
         nonTTFfilter.pipe(spawn({
@@ -479,43 +477,43 @@ var spawn = require('gulp-spawn');
               ' --windows-compatibility --no-info /dev/stdin /dev/stdout | cat',
           ],
         })).pipe(nonTTFfilter.restore)
-      ).on('error', <span class="fstat-no" title="function not covered" >function(err) {</span>
-<span class="cstat-no" title="statement not covered" >        outStream.emit('error', err);</span>
+      ).on('error', <span class="fstat-no" title="function not covered">function(err) {</span>
+<span class="cstat-no" title="statement not covered">        outStream.emit('error', err);</span>
       });
     }))
   // Generating EOT font
     .pipe(cond(
       -1 !== options.formats.indexOf('eot'),
-<span class="fstat-no" title="function not covered" >      function() {</span>
-<span class="cstat-no" title="statement not covered" >        return ttf2eot({ clone: true }).on('error', <span class="fstat-no" title="function not covered" >function(err) {</span></span>
-<span class="cstat-no" title="statement not covered" >          outStream.emit('error', err);</span>
+<span class="fstat-no" title="function not covered">      function() {</span>
+<span class="cstat-no" title="statement not covered">        return ttf2eot({ clone: true }).on('error', <span class="fstat-no" title="function not covered">function(err) {</span></span>
+<span class="cstat-no" title="statement not covered">          outStream.emit('error', err);</span>
         });
       }
     ))
   // Generating WOFF font
     .pipe(cond(
       -1 !== options.formats.indexOf('woff'),
-<span class="fstat-no" title="function not covered" >      function() {</span>
-<span class="cstat-no" title="statement not covered" >        return ttf2woff({ clone: true }).on('error', <span class="fstat-no" title="function not covered" >function(err) {</span></span>
-<span class="cstat-no" title="statement not covered" >          outStream.emit('error', err);</span>
+<span class="fstat-no" title="function not covered">      function() {</span>
+<span class="cstat-no" title="statement not covered">        return ttf2woff({ clone: true }).on('error', <span class="fstat-no" title="function not covered">function(err) {</span></span>
+<span class="cstat-no" title="statement not covered">          outStream.emit('error', err);</span>
         });
       }
     ))
   // Generating WOFF2 font
     .pipe(cond(
       -1 !== options.formats.indexOf('woff2'),
-<span class="fstat-no" title="function not covered" >      function() {</span>
-<span class="cstat-no" title="statement not covered" >        return ttf2woff2({ clone: true }).on('error', <span class="fstat-no" title="function not covered" >function(err) {</span></span>
-<span class="cstat-no" title="statement not covered" >          outStream.emit('error', err);</span>
+<span class="fstat-no" title="function not covered">      function() {</span>
+<span class="cstat-no" title="statement not covered">        return ttf2woff2({ clone: true }).on('error', <span class="fstat-no" title="function not covered">function(err) {</span></span>
+<span class="cstat-no" title="statement not covered">          outStream.emit('error', err);</span>
         });
       }
     ))
   // Filter TTF font if necessary
     .pipe(cond(
       -1 === options.formats.indexOf('ttf'),
-<span class="fstat-no" title="function not covered" >      function() {</span>
-<span class="cstat-no" title="statement not covered" >        return filter(<span class="fstat-no" title="function not covered" >function(file, unused, cb) {</span></span>
-<span class="cstat-no" title="statement not covered" >          cb(file.path.indexOf('.ttf') === file.path.length - 4);</span>
+<span class="fstat-no" title="function not covered">      function() {</span>
+<span class="cstat-no" title="statement not covered">        return filter(<span class="fstat-no" title="function not covered">function(file, unused, cb) {</span></span>
+<span class="cstat-no" title="statement not covered">          cb(file.path.indexOf('.ttf') === file.path.length - 4);</span>
         }, {
           objectMode: true,
           passthrough: true,
@@ -523,23 +521,24 @@ var spawn = require('gulp-spawn');
       }
     ));
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  duplexStream = duplexer({ objectMode: true }, inStream, outStream);</span>
+<span class="cstat-no" title="statement not covered">  duplexStream = duplexer({ objectMode: true }, inStream, outStream);</span>
 &nbsp;
   // Re-emit codepoint mapping event
-<span class="cstat-no" title="statement not covered" >  inStream.on('glyphs', <span class="fstat-no" title="function not covered" >function(glyphs) {</span></span>
-<span class="cstat-no" title="statement not covered" >    duplexStream.emit('glyphs', glyphs, options);</span>
+<span class="cstat-no" title="statement not covered">  inStream.on('glyphs', <span class="fstat-no" title="function not covered">function(glyphs) {</span></span>
+<span class="cstat-no" title="statement not covered">    duplexStream.emit('glyphs', glyphs, options);</span>
   });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return duplexStream;</span>
+<span class="cstat-no" title="statement not covered">  return duplexStream;</span>
 }
 &nbsp;
 module.exports = gulpFontIcon;
 &nbsp;
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 10:00:19 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 18 2017 17:55:51 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
