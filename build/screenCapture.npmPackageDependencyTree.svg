@@ -34,7 +34,7 @@
 <tspan x="10" y="506">  │ │ │   │ └── signal-exit@3.0.2 </tspan>
 <tspan x="10" y="522">  │ │ │   ├── map-obj@1.0.1 </tspan>
 <tspan x="10" y="538">  │ │ │   ├── minimist@1.2.0 </tspan>
-<tspan x="10" y="554">  │ │ │   ├─┬ normalize-package-data@2.3.6 </tspan>
+<tspan x="10" y="554">  │ │ │   ├─┬ normalize-package-data@2.3.8 </tspan>
 <tspan x="10" y="570">  │ │ │   │ ├── hosted-git-info@2.4.2 </tspan>
 <tspan x="10" y="586">  │ │ │   │ ├─┬ is-builtin-module@1.0.0 </tspan>
 <tspan x="10" y="602">  │ │ │   │ │ └── builtin-modules@1.1.1 </tspan>
@@ -142,10 +142,10 @@
 <tspan x="10" y="2234">  │     ├─┬ nopt@3.0.6 </tspan>
 <tspan x="10" y="2250">  │     │ └── abbrev@1.1.0 </tspan>
 <tspan x="10" y="2266">  │     ├─┬ npmlog@4.0.2 </tspan>
-<tspan x="10" y="2282">  │     │ ├─┬ are-we-there-yet@1.1.2 </tspan>
+<tspan x="10" y="2282">  │     │ ├─┬ are-we-there-yet@1.1.4 </tspan>
 <tspan x="10" y="2298">  │     │ │ └── delegates@1.0.0 </tspan>
 <tspan x="10" y="2314">  │     │ ├── console-control-strings@1.1.0 </tspan>
-<tspan x="10" y="2330">  │     │ ├─┬ gauge@2.7.3 </tspan>
+<tspan x="10" y="2330">  │     │ ├─┬ gauge@2.7.4 </tspan>
 <tspan x="10" y="2346">  │     │ │ ├── aproba@1.1.1 </tspan>
 <tspan x="10" y="2362">  │     │ │ ├── has-unicode@2.0.1 </tspan>
 <tspan x="10" y="2378">  │     │ │ ├─┬ string-width@1.0.2 </tspan>
@@ -196,7 +196,7 @@
 <tspan x="10" y="3098">  │     │ │   ├─┬ dashdash@1.14.1 </tspan>
 <tspan x="10" y="3114">  │     │ │   │ └── assert-plus@1.0.0 </tspan>
 <tspan x="10" y="3130">  │     │ │   ├── ecc-jsbn@0.1.1 </tspan>
-<tspan x="10" y="3146">  │     │ │   ├─┬ getpass@0.1.6 </tspan>
+<tspan x="10" y="3146">  │     │ │   ├─┬ getpass@0.1.7 </tspan>
 <tspan x="10" y="3162">  │     │ │   │ └── assert-plus@1.0.0 </tspan>
 <tspan x="10" y="3178">  │     │ │   ├── jodid25519@1.0.2 </tspan>
 <tspan x="10" y="3194">  │     │ │   ├── jsbn@0.1.1 </tspan>
