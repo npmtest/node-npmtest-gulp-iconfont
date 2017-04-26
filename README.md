@@ -1,6 +1,6 @@
 # npmtest-gulp-iconfont
 
-#### test coverage for  [gulp-iconfont (v8.0.1)](https://github.com/nfroidure/gulp-iconfont)  [![npm package](https://img.shields.io/npm/v/npmtest-gulp-iconfont.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-gulp-iconfont) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-gulp-iconfont.svg)](https://travis-ci.org/npmtest/node-npmtest-gulp-iconfont)
+#### basic test coverage for  [gulp-iconfont (v8.0.1)](https://github.com/nfroidure/gulp-iconfont)  [![npm package](https://img.shields.io/npm/v/npmtest-gulp-iconfont.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-gulp-iconfont) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-gulp-iconfont.svg)](https://travis-ci.org/npmtest/node-npmtest-gulp-iconfont)
 
 #### Create icon fonts from several SVG icons
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-gulp-iconfont/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-gulp-iconfont/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-gulp-iconfont/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-gulp-iconfont/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-gulp-iconfont/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-gulp-iconfont/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-gulp-iconfont/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-gulp-iconfont/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-gulp-iconfont/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-gulp-iconfont/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-gulp-iconfont/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-gulp-iconfont/build/coverage.html/index.html)
 
@@ -104,7 +104,8 @@
         "preversion": "npm run lint && npm test",
         "test": "mocha tests/*.mocha.js"
     },
-    "version": "8.0.1"
+    "version": "8.0.1",
+    "bin": {}
 }
 ```
 
